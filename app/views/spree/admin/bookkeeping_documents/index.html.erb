@@ -86,7 +86,7 @@
 <% end %>
 
 <% if @bookkeeping_documents.any? %>
-  <table class="table" id="listing_orders" data-hook>
+  <table class="table table-responsive" id="listing_orders" data-hook>
     <thead>
       <tr data-hook="printables_index_headers">
         <th><%= sort_link @search, :created_at, Spree.t(:date, scope: :print_invoice) %></th>
